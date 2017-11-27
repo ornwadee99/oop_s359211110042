@@ -26,10 +26,6 @@ public class TestCondition {
 
 
 
-
-        System.out.println("OOP");
-        System.out.println("IS221");
-
     }//main
 
 }//cass
