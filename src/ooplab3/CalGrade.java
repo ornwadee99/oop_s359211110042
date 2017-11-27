@@ -1,6 +1,7 @@
 package ooplab3;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class CalGrade {
@@ -9,27 +10,29 @@ public class CalGrade {
 //    score 60-69 grade C
 //    score 70-79 grade B
 //    score 80-100 grade A
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 //        BufferedReader
         BufferedReader reader = new BufferedReader (new InputStreamReader(System.in));
         System.out.print("Enter Your Score: ");
-        int R = 70;
+        int score = Integer.parseInt(reader.readLine());
 
-        if (R<=50){
+        if (score<=50){
             System.out.println("Your grade F");
         }
-        else if (R<=59){
+        else if (score<=59){
             System.out.println("Your grade D");
         }
-        else if (R<=69) {
+        else if (score<=69) {
             System.out.println("Your grade C");
         }
-        else if (R<=79) {
+        else if (score<=79) {
             System.out.println("Your grade B");
         }
         else {
             System.out.println("Your grade A");
         }
+
+
         }//main
 
     }//class
