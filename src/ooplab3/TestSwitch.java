@@ -16,12 +16,14 @@ public class TestSwitch {
 //            default: System.out.println("Please enter number between 1-3, Thakyou");
 //
 //        }//sWitch
-        char c ='E';
+        char c ='R';
         switch (c){
             case 'A':System.out.println("A ant");break;
             case 'B':System.out.println("B bird");break;
             case 'C':System.out.println("C cat");break;
-            default: System.out.println("D dog");
+            case 'D':System.out.println("D gog");break;
+            default: System.out.println("E Eag");
+
         }//sWitch
 
 
