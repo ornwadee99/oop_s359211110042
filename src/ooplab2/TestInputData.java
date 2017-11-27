@@ -22,6 +22,7 @@ public class TestInputData {
         System.out.print("Whare are you?: ");
         String address = scanner.nextLine();
         System.out.print("You form: "+address);
+        System.out.print("You form: "+address);
 
 
     }//main
