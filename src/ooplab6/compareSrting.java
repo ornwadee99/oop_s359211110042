@@ -17,7 +17,5 @@ public class compareSrting {
             System.out.println("no. +");
         else System.out.println("no. -");
 
-
-
     }//main
 }//class
