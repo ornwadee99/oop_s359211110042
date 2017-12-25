@@ -36,3 +36,4 @@ public class myArray2D {
             return num;
         }//input
 }//class
+}
