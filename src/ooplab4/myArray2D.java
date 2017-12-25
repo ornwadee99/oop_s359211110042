@@ -19,24 +19,20 @@ public class myArray2D {
             for (int i = 0; i < num.length; i++) {
                 for (int j = 0; j < num[i].length; j++) {
                     System.out.print(num[i][j] + " ");
-    }
-
-
-            }//j
+    }//j
+             System.out.println();
+            }//i
             System.out.println();
-        }//i
-        System.out.println();
-        return num;
-    }//showData2D
-
-    private static int[][] inputDAta2D(int[][] num) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.print("Enter as integer: ");
-        for (int i = 0; i < num.length; i++) {
-            for (int j = 0; j < num[i].length; j++) {
-                System.out.print("num[" + i + "][" + j + "]: ");
-                num[i][j] = Integer.parseInt(reader.readLine());
-            }
-        }
-    }
+        }//showdata2D
+        private static int[][] inputDAta2D(int[][] num) throws IOException {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            System.out.print("Enter as integer: ");
+            for (int i = 0; i < num.length; i++) {
+                for (int j = 0; j < num[i].length; j++) {
+                    System.out.print("num[" + i + "][" + j + "]: ");
+                    num[i][j] = Integer.parseInt(reader.readLine());
+                }//j
+            }//i
+            return num;
+        }//input
 }//class
