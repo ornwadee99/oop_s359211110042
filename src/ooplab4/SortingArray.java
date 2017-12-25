@@ -3,13 +3,13 @@ package ooplab4;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
-1. allow user input data array: inputData,showData
-2. find summation of data in array
-3. fing average value in array
-4. find maximum value in array
-5. find minimum value in array
-6. sorting data in array (Descending order)
-7. sorting data in array (Ascending order)
+//1. allow user input data array: inputData,showData
+//2. find summation of data in array
+//3. fing average value in array
+//4. find maximum value in array
+//5. find minimum value in array
+//6. sorting data in array (Descending order)
+//7. sorting data in array (Ascending order)
 
 public class SortingArray {
     private  static  int MAX = 5;
