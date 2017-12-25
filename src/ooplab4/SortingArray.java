@@ -72,12 +72,11 @@ public class SortingArray {
     private static Integer[] inputData(Integer[] num) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter an integer: ");
-        for (int i=0;i<num.length;i++){
-            System.out.print("num["+i+"]: ");
+        for (int i = 0; i < num.length; i++) {
+            System.out.print("num[" + i + "]: ");
             num[i] = scanner.nextInt();
 
         }
+    }
+        }//class
 
-
-
-}//class
