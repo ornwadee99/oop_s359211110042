@@ -19,7 +19,10 @@ public class StudentApp {
         Student s3 = new Student();
         s3 = inputData(s3);
 
-
+        showData(s3);
+        //test
+        //System.out.println(Student.faculty);
+        System.out.println(s1.faculty);
 
 
 
@@ -28,7 +31,7 @@ public class StudentApp {
     private static Student inputData(Student s) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter student info:");
-        System.out.println("Enter student ID: ");
+        System.out.print("Enter student ID: ");
         s.setId(scanner.nextLine());
         System.out.print("Enter student name: ");
         s.setName(scanner.nextLine());

@@ -1,6 +1,7 @@
 package ooplab7;
 
 public class Student {
+    public static String faculty = "Management Technology";
         private  String id;
         private  String name;
         private  String major;
