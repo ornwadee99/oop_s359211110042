@@ -22,6 +22,7 @@ public class StudentApp {
         System.out.println("Name: "+s.getName());
         System.out.println("Major: "+s.getMajor());
         System.out.println("Group: "+s.getGroup());
+
     }//showdata
 
 }//class
