@@ -4,31 +4,34 @@ import java.util.Scanner;
 
 public class mySupercar {
     public static void main(String[] args) {
-        SuperCar b = new SuperCar();
-        b = inputData(b);
-        b.getSupercarInfo();
-
-    }//main
-
-    private static SuperCar inputData(SuperCar b) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter Supercar info: ");
-        System.out.print("Enter Supercar carbrand: ");
-        b.setCarbrand(scanner.nextLine());
-        System.out.print("Enter Supercar carcolcor: ");
-        b.setCarcolor(scanner.nextLine());
-        System.out.print("Enter Supercar cerenginesize: ");
-        b.setCerenginesize(scanner.nextLine());
-        System.out.print("Enter Supercar maxspeed: ");
-        b.setMaxspeed(scanner.nextLine());
-        System.out.print("Enter Supercar countryoforigin: ");
-        b.setCountryoforigin(scanner.nextLine());
-        return  b;
-
-
+        ArrayList<SuperCar> myCarList = new ArrayList<SuperCar>();
+        myCarList = inputData(myCarList);
+        System.out.println("== Show Super Car Info ==");
+        for (int i = 0; i < myCarList.size(); i++) {
+            System.out.println(myCarList.get(i).getSupercar());
+        }
     }
 
+    private static ArrayList inputData(ArrayList myCarList) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please insert Supercar info: ");
+        for (int i =0;i<2;i++){
+        System.out.print("Super car: "+(i+1));
+        System.out.print("Brand: ");
+        String b = scanner.nextLine();
+        System.out.print("Color: ");
+        String c = scanner.nextLine();
+        System.out.print("Engine Size: ");
+        String e = scanner.nextLine();
+            System.out.print("Cerenginesize: ");
+            String a = scanner.nextLine();
 
+        SuperCar car = new SuperCar(b,c,e);
+        myCarList.add(car);
+
+    }
+        return   myCarList;
+}
 
 
     }//class
