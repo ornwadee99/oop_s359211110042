@@ -7,7 +7,7 @@ public class ShapeApp {
         System.out.println("Length: "+rectangle.getLength());
         System.out.println("Area: "+rectangle.getArea());
 
-        Triangle triangle = new Triangle(20,0,30);
+        Triangle triangle = new Triangle(20,0,40);
         System.out.println(triangle.getArea());
 
     }
