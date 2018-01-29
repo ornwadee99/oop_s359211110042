@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class mySupercar {
     public static void main(String[] args) {
-        ArrayList<SuperCar> myCarList = new ArrayList<SuperCar>();
+        Scanner<SuperCar> myCarList = new Scanner<SuperCar>();
         myCarList = inputData(myCarList);
         System.out.println("== Show Super Car Info ==");
         for (int i = 0; i < myCarList.size(); i++) {
@@ -12,7 +12,7 @@ public class mySupercar {
         }
     }
 
-    private static ArrayList inputData(ArrayList myCarList) {
+    private static Scanner inputData(Scanner myCarList) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please insert Supercar info: ");
         for (int i =0;i<2;i++){
@@ -23,10 +23,14 @@ public class mySupercar {
         String c = scanner.nextLine();
         System.out.print("Engine Size: ");
         String e = scanner.nextLine();
-            System.out.print("Cerenginesize: ");
-            String a = scanner.nextLine();
+        System.out.print("Cerenginesize: ");
+        String a = scanner.nextLine();
+        System.out.print("Maxspeed: ");
+        String n = scanner.nextLine();
+        System.out.print("Countryoforigin: ");
+        String p = scanner.nextLine();
 
-        SuperCar car = new SuperCar(b,c,e);
+        SuperCar car = new SuperCar(b,c,e,a,n,p);
         myCarList.add(car);
 
     }
