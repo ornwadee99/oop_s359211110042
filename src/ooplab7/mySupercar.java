@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class mySupercar {
     public static void main(String[] args) {
-        Scanner<SuperCar> myCarList = new Scanner<SuperCar>();
+        Scanner<SuperCar> myCarList = new Scanner<SuperCarr>();
         myCarList = inputData(myCarList);
         System.out.println("== Show Super Car Info ==");
         for (int i = 0; i < myCarList.size(); i++) {
